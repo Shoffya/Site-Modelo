@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Modelo</title>
+
+    <!--Font-->
+    <link href="//db.onlinewebfonts.com/c/91dd06fc110a0b45117e9338dcb9dcf9?family=Colonna+MT" rel="stylesheet"
+        type="text/css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <nav class="fixed-top">
+            <a class="titleNav" href="/#inicio">
+                <img class="logo" src="/img/logo.png" alt="Logo" width="50" height="50">NFIC
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li onclick="navbarActive1(this)"><a class="active" id="option1" href="/#parallax-home">Home</a></li>
+                <li onclick="navbarActive2(this)"><a id="option2" href="/#about-area">Sobre</a></li>
+                <li onclick="navbarActive3(this)"><a id="option3" href="/#swiper">Projetos</a></li>
+                <li onclick="navbarActive4(this)"><a id="option4" href="/#eventos">Eventos</a></li>
+                <li onclick="navbarActive5(this)"><a id="option5" href="/#footer">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- BOTÃO DO WHATSAPP FLUTUANTE -->
+
+    <a class="whatsapp whats-icon" href="https://api.whatsapp.com/send?phone=55119999999999" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <section id="parallax-home">
+        <img src="img/parallax1.png" alt="parallax1" id="parallax1">
+        <img src="img/parallax2.png" alt="parallax2" id="parallax2">
+        <img src="img/parallax3.png" alt="parallax3" id="parallax3">
+        <h2 id="texto">Feito para você!</h2>
+        <button id="btnExplore" onclick="showModal()">Explore</button>
+        <img src="img/parallax4.png" alt="parallax4" id="parallax4">
+    </section>
+
+    <div class="modal-video" id="modal">
+        <div class="modal-content">
+            <span onclick="hideModal()">&#10006;</span>
+            <video id="video" src="./video/fogos.mp4" controls></video>
+        </div>
+    </div>
+
+    <!-- INÍCIO -->
+    <div id="inicio">
+        <div class="col-12 inicioPersonalizado">
+            <h1 class="tituloInicio">-=NFIC=-</h1>
+
+            <h4 class="textoColor">Contrate-nos para festas de aniversário.</h4>
+
+            <p class="textoInicio">
+                Nós ficaremos felizes em fazer parte desse momento tão<br>
+                importante. Participamos de festas infantis e demais eventos.<br>
+                Faça seu orçamento.<br>
+                Entre em contato em nosso Whatsapp.<br>
+                Click no botão a direita no canto inferior.
+            </p>
+
+            <h4 class="textoColor">Ou faça sua fantasia do seu personagem.</h4>
+
+            <p class="textoInicio">
+                Tenha uma fantasia incrível do seu personagem<br>
+                favorito, feita exclusivamente por uma equipe de profissionais,<br>
+                por um preço acessível e com parcelas feitas para você.<br><br>
+            </p>
+        </div>
+    </div>
+
+    <!-- SWIPER -->
+    <div class="slider" id="swiper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="swiperTexto">
+                        <h2 class="main-title">Fantasias</h2>
+                        <p>
+                            Essas são algumas das fantasias produzidas pela<br>
+                            nossa equipe, feitas exclusivamente para você.<br><br>
+
+                            Se esta procurando uma fantasia exclusiva do seu personagem<br>
+                            favorito ou uma participação em festas de algum deles,<br>
+                            aqui é o lugar certo!<br><br>
+
+                        <h5>Entre em contato em nosso Whatsapp.</h5>
+                        <h5>Click no botão a direita no canto inferior.</h5>
+                        </p>
+                    </div>
+                </div>
+                <div class="style-color col-md-6">
+                    <div class="swiperCards">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="box swiper-slide">
+                                    <p class="marvel">MARVEL</p>
+                                    <!-- MODEL -->
+                                    <img src="img/Ant-Man.png" alt="model" class="model">
+                                    <!-- DESTAILS -->
+                                    <div class="details">
+                                        <!-- LOGO-CHARACTER -->
+                                        <img src="img/AntMan-logo.png" alt="Logo Card" width="100px"
+                                            style="height:auto;" class="logoCard">
+                                        <!-- CHARACTER-DETAILS -->
+                                        <p>Fantasia do Homem Formiga.</p>
+                                    </div>
+                                </div>
+                                <div class="box swiper-slide">
+                                    <p class="marvel">MARVEL</p>
+                                    <!-- MODEL -->
+                                    <img src="img/DeadPool.png" alt="model" class="model">
+                                    <!-- DESTAILS -->
+                                    <div class="details">
+                                        <!-- LOGO-CHARACTER -->
+                                        <img src="img/Deadpool-logo.png" alt="Logo Card" width="100px"
+                                            style="height:auto;" class="logoCard">
+                                        <!-- CHARACTER-DETAILS -->
+                                        <p>Fantasia do DeadPool.</p>
+                                    </div>
+                                </div>
+                                <div class="box swiper-slide">
+                                    <p class="marvel">MARVEL</p>
+                                    <!-- MODEL -->
+                                    <img src="img/IronMan.png" alt="model" class="model">
+                                    <!-- DESTAILS -->
+                                    <div class="details">
+                                        <!-- LOGO-CHARACTER -->
+                                        <img src="img/IronMan-logo.png" alt="Logo Card" width="100px"
+                                            style="height:auto;" class="logoCard">
+                                        <!-- CHARACTER-DETAILS -->
+                                        <p>Fantasia do Homem de Ferro.</p>
+                                    </div>
+                                </div>
+                                <div class="box swiper-slide">
+                                    <p class="marvel">MARVEL</p>
+                                    <!-- MODEL -->
+                                    <img src="img/SpiderMan.png" alt="model" class="model">
+                                    <!-- DESTAILS -->
+                                    <div class="details">
+                                        <!-- LOGO-CHARACTER -->
+                                        <img src="img/SpiderMan-logo.png" alt="Logo Card" width="30px"
+                                            style="height:auto;" class="logoCard">
+                                        <!-- CHARACTER-DETAILS -->
+                                        <p>Fantasia do Homem Aranha.</p>
+                                    </div>
+                                </div>
+                                <div class="box swiper-slide">
+                                    <p class="marvel">MARVEL</p>
+                                    <!-- MODEL -->
+                                    <img src="img/Thor.png" alt="model" class="model">
+                                    <!-- DESTAILS -->
+                                    <div class="details">
+                                        <!-- LOGO-CHARACTER -->
+                                        <img src="img/Thor-logo.png" alt="Logo Card" width="100px" style="height:auto;"
+                                            class="logoCard">
+                                        <!-- CHARACTER-DETAILS -->
+                                        <p>Fantasia do Thor.</p>
+                                    </div>
+                                </div>
+                                <div class="box swiper-slide">
+                                    <p class="marvel">MARVEL</p>
+                                    <!-- MODEL -->
+                                    <img src="img/Venom.png" alt="model" class="model">
+                                    <!-- DESTAILS -->
+                                    <div class="details">
+                                        <!-- LOGO-CHARACTER -->
+                                        <img src="img/Venom-logo.png" alt="Logo Card" width="100px" style="height:auto;"
+                                            class="logoCard">
+                                        <!-- CHARACTER-DETAILS -->
+                                        <p>Fantasia do Venom.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EVENTOS -->
+
+    <div id="eventos">
+        <div class="container" id="fotos_ventos">
+            <div class="row">
+                <div class="container eventos">
+                    <h2 class="title-evento">-=Eventos=-</h2>
+                    <figure>
+                        <img src="../img/swiper1.png" alt="Imagem Modelo" id="mainImg">
+                    </figure>
+                    <div class="thumb_img_list">
+                        <ul>
+                            <li>
+                                <img src="../img/swiper1.png" alt="Imagem Modelo" id="thumb1">
+                            </li>
+                            <li>
+                                <img src="../img/swiper2.png" alt="Imagem Modelo" id="thumb2">
+                            </li>
+                            <li>
+                                <img src="../img/swiper3.png" alt="Imagem Modelo" id="thumb3">
+                            </li>
+                            <li>
+                                <img src="../img/swiper4.png" alt="Imagem Modelo" id="thumb4">
+                            </li>
+                            <li>
+                                <img src="../img/swiper5.png" alt="Imagem Modelo" id="thumb5">
+                            </li>
+                            <li>
+                                <img src="../img/swiper6.png" alt="Imagem Modelo" id="thumb6">
+                            </li>
+                            <li>
+                                <img src="../img/swiper7.png" alt="Imagem Modelo" id="thumb7">
+                            </li>
+                            <li>
+                                <img src="../img/swiper8.png" alt="Imagem Modelo" id="thumb8">
+                            </li>
+                            <li>
+                                <img src="../img/swiper9.png" alt="Imagem Modelo" id="thumb9">
+                            </li>
+                            <li>
+                                <img src="../img/swiper10.png" alt="Imagem Modelo" id="thumb10">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOBRE -->
+
+    <div id="about-area">
+        <div class="container" id="sobre">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="main-title">Quem Somos</h2>
+                </div>
+                <div class="col-md-6">
+                    <div class="cardModelo">
+                        <div class="rotate_left">
+                            <img class="img-fluid" src="img/quem-somos.png" alt="Quem somos" width="300" height="200">
+                        </div>
+                    </div>
+                </div>
+                <div class="style-color col-md-6">
+                    <h3 class="about-title">Conheça a NFIC</h3>
+                    <p>A NFIC foi criada em 2005 e, atualmente é uma
+                        das maiores empresas na area de eventos festivos e customização de fantasias do mundo.
+                        Buscamos proporcionar aos clientes uma experiência inesquecível e outros benefícios, como:
+                    </p>
+                    <ul id="about-list">
+                        <li><i class="bi bi-check"></i> Bom atendimento</li>
+                        <li><i class="bi bi-check"></i> Preços acessíveis</li>
+                        <li><i class="bi bi-check"></i> Segurança</li>
+                        <li><i class="bi bi-check"></i> Conforto</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOSSA EQUIPE -->
+
+        <div id="nossaEquipe">
+            <div class="container equipe">
+                <div class="col-12">
+                    <h2 class="title-fun">Nossa Equipe</h2>
+                </div>
+                <div class="col">
+                    <div class="boxs">
+                        <div class="imgBx">
+                            <img src="./img/funci1.png" alt="Designer">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h3>Ana Maria</h3>
+                                <p>Designer profissional.<br>
+                                    Já confeccionou mais de 3.000 modelos
+                                    de fantasias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="boxs">
+                        <div class="imgBx">
+                            <img src="./img/funci2.png" alt="Designer">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h3>Paula Carvalho</h3>
+                                <p>Chefe de Costura.<br>
+                                    Já liderou varias equipe
+                                    bem sucedidas do Brasil.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="boxs fun">
+                        <div class="imgBx">
+                            <img src="./img/funci3.png" alt="Designer">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <h3>Ricardo Gomez</h3>
+                                <p>Acrobata e Dançarino.<br>
+                                    Ganhador de 7 troféus em<br>
+                                    competições de danças internacional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CONTATO-->
+
+    <div class="modal fade" id="telContato" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content contSup">
+                <div class="modal-header color-modal">
+                    <h5 class="modal-title">CONTATO</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="modalCS" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-li">
+                    <li>
+                        Cel: +55 11 99999-9999
+                    </li>
+                    <li>
+                        Tel: +55 11 9999-9999
+                    </li>
+                    <li>
+                        Rua Button Blue, nº 000, CEP: 11111-111
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL TELEFONE DE SUPORTE -->
+
+    <div class="modal fade" id="telSuporte" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content contSup">
+                <div class="modal-header color-modal">
+                    <h5 class="modal-title">TELEFONES PARA SUPORTE</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="modalCS" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-li">
+                    <li>
+                        Cel: +55 11 99999-9999
+                    </li>
+                    <li>
+                        Cel: +55 11 99999-9999
+                    </li>
+                    <li>
+                        Tel: +55 11 9999-9999
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="boxs" id="footer">
+            <h2>MAPA DO SITE</h2>
+            <li><a href="/#parallax-home">Home</a></li>
+            <li><a href="/#about-area">Sobre</a></li>
+            <li><a href="/#swiper">Projetos</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+        </div>
+        <div class="boxs">
+            <h2>INFORMAÇÕES</h2>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#telContato">Contato</a></li>
+            <li><a href="mailto:ficticior@example.com">Email</a></li>
+        </div>
+        <div class="boxs">
+            <h2>SUPORTE</h2>
+            <li><a href="./faq/pgFaq.html">FAQ(Perguntas frequentes)</a></li>
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#telSuporte">Telefones</a></li>
+        </div>
+        <div class="boxs">
+            <h2>REDES SOCIAIS</h2>
+            <!-- Ícones -->
+            <section class="icons">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-google"></i></a>
+            </section>
+
+        </div>
+    </footer>
+
+    <div class="footer">
+        <h2>Logo</h2>
+        <div class="informacoesAdd">
+            <h6>Testando componente ao final do rodapé da página, agradecemos sua compreensão.</h6>
+        </div>
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
+
+    <script src="js/modal-video.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/navbarActive.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/eventos.js"></script>
+
+</body>
+
+</html>
