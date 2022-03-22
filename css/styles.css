@@ -18,16 +18,16 @@ body{
     }
 }
 
-@font-face {
+/* @font-face {
     font-family: "Colonna MT";
     src: url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.eot");
-    src: url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.eot?#iefix") 
+    src: url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.eot?#iefix")
     format("embedded-opentype"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.woff2") 
     format("woff2"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.woff") 
     format("woff"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.ttf") 
     format("truetype"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.svg#Colonna MT") 
     format("svg");
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
 
