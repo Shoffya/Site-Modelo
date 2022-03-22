@@ -12,6 +12,5 @@ window.addEventListener('scroll', () => {
     parallax3.style.top = value * 0.5 + 'px';
     parallax4.style.top = value * 0 + 'px';
     texto.style.marginRight = value * 4 + 'px';
-    texto.style.marginTop = value * 1.5 + 'px';
     btnExplore.style.marginTop = value * 5 + 'px';
 })
