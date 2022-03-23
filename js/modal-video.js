@@ -1,6 +1,9 @@
 function showModal() {
+    var video = document.getElementById("video");
     var element = document.getElementById("modal");
     element.classList.add("show");
+
+    video.play();
 }
 
 function hideModal() {

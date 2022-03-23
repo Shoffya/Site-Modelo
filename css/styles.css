@@ -252,7 +252,6 @@ nav {
     width: 600px;
     height: auto;
     border-radius: 0%;
-    box-shadow: 30px 50px 10px rgba(255, 255, 255, 0.089);
 }
 
 .modal-content video{
@@ -520,7 +519,7 @@ usados no Swiper também.*/
 
 .main-title{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
+    color: white;
     margin: 15px 0 40px 0;
     font-size: 40px;
     text-align: center;
@@ -533,7 +532,7 @@ usados no Swiper também.*/
     content: '';
     width: 140px;
     height: 3px;
-    background-color: black;
+    background-color: white;
     margin: 0 auto;
     margin-top: 10px;
     display: block;
@@ -545,7 +544,7 @@ usados no Swiper também.*/
 
 .container h2{
     border-radius: 4px;
-    background-color: white;
+    background-color: black;
 }
 
 #about-list{
