@@ -352,57 +352,47 @@
 
     <!-- MODAL CONTATO-->
 
-    <div class="modal fade" id="telContato" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content contSup">
-                <div class="modal-header color-modal">
-                    <h5 class="modal-title">CONTATO</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span class="modalCS" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-li">
-                    <li>
-                        Cel: +55 11 99999-9999
-                    </li>
-                    <li>
-                        Tel: +55 11 9999-9999
-                    </li>
-                    <li>
-                        Rua Button Blue, nº 000, CEP: 11111-111
-                    </li>
-                </div>
+    <div class="modalSC" id="telContato">
+        <div class="modal-content contSup">
+            <div>
+                <h5>CONTATO<span class="span" onclick="hideModalC()">&#10006;</span></h5>
             </div>
+
+            <ul>
+                <li>
+                    Cel: +55 11 99999-9999
+                </li>
+                <li>
+                    Tel: +55 11 9999-9999
+                </li>
+                <li>
+                    Rua Button Blue, nº 000, CEP: 11111-111
+                </li>
+            </ul>
         </div>
     </div>
 
-    <!-- MODAL TELEFONE DE SUPORTE -->
-
-    <div class="modal fade" id="telSuporte" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content contSup">
-                <div class="modal-header color-modal">
-                    <h5 class="modal-title">TELEFONES PARA SUPORTE</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span class="modalCS" aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-li">
-                    <li>
-                        Cel: +55 11 99999-9999
-                    </li>
-                    <li>
-                        Cel: +55 11 99999-9999
-                    </li>
-                    <li>
-                        Tel: +55 11 9999-9999
-                    </li>
-                </div>
+    <div class="modalSC" id="telSuporte">
+        <div class="modal-content contSup">
+            <div>
+                <h5>TELEFONES PARA SUPORTE<span class="span" onclick="hideModalS()">&#10006;</span></h5>
             </div>
+            <ul>
+                <li>
+                    Cel: +55 11 99999-9999
+                </li>
+                <li>
+                    Cel: +55 11 99999-9999
+                </li>
+                <li>
+                    Tel: +55 11 9999-9999
+                </li>
+            </ul>
         </div>
     </div>
 
     <!-- FOOTER -->
+
     <footer>
         <div class="boxs" id="footer">
             <h2>MAPA DO SITE</h2>
@@ -413,13 +403,13 @@
         </div>
         <div class="boxs">
             <h2>INFORMAÇÕES</h2>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#telContato">Contato</a></li>
+            <li><button id="btnC"><a href="#contato">Contato</a></button></li>
             <li><a href="mailto:ficticior@example.com">Email</a></li>
         </div>
         <div class="boxs">
             <h2>SUPORTE</h2>
             <li><a href="./faq/pgFaq.html">FAQ(Perguntas frequentes)</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#telSuporte">Telefones</a></li>
+            <li><button id="btnS"><a href="#contato">Telefones</a></button></li>
         </div>
         <div class="boxs">
             <h2>REDES SOCIAIS</h2>
@@ -453,6 +443,7 @@
         });
     </script>
 
+    <script src="js/modal-contato_e_superte.js"></script>
     <script src="js/modal-video.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/navbarActive.js"></script>
