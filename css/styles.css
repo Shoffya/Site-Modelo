@@ -878,7 +878,7 @@ footer .boxs button{
 }
 
 .feedback:hover{
-    background: black;
+    background: rgb(148, 0, 0);
 }
 
 .feedback:hover h5{
