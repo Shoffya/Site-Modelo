@@ -856,6 +856,43 @@ footer .boxs button{
 
 /* BOTÃO FLUTUANTE WHATSAPP */
 
+.feedback{
+    float: left;
+    position: fixed;
+    width: 50px;
+    height: 120px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    background: white;
+    bottom: 150px;
+    margin-top: 200px;
+    z-index: 8;
+}
+
+.feedback h5{
+    color: black;
+    margin-top: 70px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    transform: rotate(270deg);
+}
+
+.feedback:hover{
+    background: black;
+}
+
+.feedback:hover h5{
+    color:white;
+}
+
+@media (max-width:355px){
+    .feedback{
+        bottom: 40%;
+    }
+}
+
+/* BOTÃO FLUTUANTE WHATSAPP */
+
 .whatsapp{
     position: fixed;
     bottom: 70px;
