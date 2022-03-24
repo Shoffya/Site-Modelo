@@ -112,6 +112,7 @@ nav {
         background: #2b0505;
         flex-direction: column;
         align-items: center;
+        padding-right: 5%;
         justify-content: space-around;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
@@ -854,7 +855,7 @@ footer .boxs button{
     }
 }
 
-/* BOTÃO FLUTUANTE WHATSAPP */
+/* BOTÃO FEEDBACK */
 
 .feedback{
     float: left;
@@ -863,14 +864,14 @@ footer .boxs button{
     height: 120px;
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
-    background: white;
+    background: rgb(148, 0, 0);
     bottom: 150px;
     margin-top: 200px;
     z-index: 8;
 }
 
 .feedback h5{
-    color: black;
+    color: white;
     margin-top: 70px;
     font-family: 'Poppins',sans-serif;
     font-weight: 700;
@@ -878,7 +879,7 @@ footer .boxs button{
 }
 
 .feedback:hover{
-    background: rgb(148, 0, 0);
+    background: black;
 }
 
 .feedback:hover h5{
