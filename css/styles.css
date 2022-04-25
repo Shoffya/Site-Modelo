@@ -5,14 +5,14 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     min-height: 100vh;
     overflow-x: hidden;
-    background: linear-gradient(rgb(15, 24, 43),white);
+    background: linear-gradient(rgb(15, 24, 43), white);
 }
 
 @media screen and (max-width: 553px) {
-    body{
+    body {
         position: absolute;
         background: rgb(15, 24, 43);
     }
@@ -21,12 +21,7 @@ body{
 @font-face {
     font-family: "Colonna MT";
     src: url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.eot");
-    src: url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.eot?#iefix")
-    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.woff2") 
-    format("woff2"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.woff") 
-    format("woff"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.ttf") 
-    format("truetype"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.svg#Colonna MT") 
-    format("svg");
+    src: url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.woff") format("woff"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/91dd06fc110a0b45117e9338dcb9dcf9.svg#Colonna MT") format("svg");
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;700&display=swap');
@@ -38,23 +33,23 @@ a {
     transition: 0.3s;
 }
 
-a:hover{
+a:hover {
     color: white;
 }
-  
+
 .nav-list a:hover {
     color: orange;
     border-bottom: 3px solid orange;
     opacity: 0.7;
 }
 
-.logo{
+.logo {
     border-radius: 50%;
     margin-right: 20px;
 }
 
 @media (max-width: 1107px) {
-    .logo{
+    .logo {
         display: none;
     }
 }
@@ -64,7 +59,7 @@ a:hover{
     text-transform: uppercase;
     letter-spacing: 4px;
 }
-  
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -73,13 +68,13 @@ nav {
     background: #2b0505;
     height: 9vh;
 }
-  
+
 .nav-list {
     font-size: 20px;
     list-style: none;
     display: flex;
 }
-  
+
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
@@ -128,7 +123,7 @@ nav {
     }
 }
 
-.nav-list a.active{
+.nav-list a.active {
     color: orange;
     border-bottom: 3px solid orange;
 
@@ -143,6 +138,7 @@ nav {
         opacity: 0;
         transform: translateX(50px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -163,7 +159,7 @@ nav {
 
 /* PARALLAX */
 
-#parallax-home{
+#parallax-home {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -174,7 +170,7 @@ nav {
     overflow: hidden;
 }
 
-#parallax-home::before{
+#parallax-home::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -184,7 +180,7 @@ nav {
     z-index: 7;
 }
 
-#parallax-home img{
+#parallax-home img {
     position: absolute;
     top: 0;
     left: 0;
@@ -194,42 +190,42 @@ nav {
     pointer-events: none;
 }
 
-#parallax-home #parallax4{
+#parallax-home #parallax4 {
     z-index: 6;
 }
 
-#texto{
+#texto {
     position: absolute;
     right: -350px;
-    margin-bottom:-4px ;
+    margin-bottom: -4px;
     color: white;
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 5;
 }
 
-#btnExplore{
+#btnExplore {
     text-decoration: none;
     display: inline-block;
     padding: 8px 30px;
     border: none;
     border-radius: 40px;
     background: white;
-    margin-bottom:110px ;
+    margin-bottom: 110px;
     color: black;
     font-size: 1.5em;
     z-index: 2;
     transform: translateY(100px);
 }
 
-#btnExplore:hover{
+#btnExplore:hover {
     background: black;
     color: white;
 }
 
 /* VIDEO */
 
-.modal-video{
+.modal-video {
     position: fixed;
     padding: 0;
     left: 0;
@@ -242,31 +238,31 @@ nav {
     transform: scale(1.1);
     opacity: 0;
     visibility: hidden;
-    transition: visibility 0.25s ease-in-out, 
-    transform 0.25s ease-in-out,
-    opacity 0.25s ease-in-out;
+    transition: visibility 0.25s ease-in-out,
+        transform 0.25s ease-in-out,
+        opacity 0.25s ease-in-out;
     z-index: 9;
 }
 
-.modal-content{
+.modal-content {
     background: transparent;
     width: 600px;
     height: auto;
     border-radius: 0%;
 }
 
-.modal-content video{
+.modal-content video {
     width: 100%;
 }
 
 @media (max-width: 599px) {
-    .modal-content{
+    .modal-content {
         margin-left: 2%;
         margin-right: 2%;
     }
 }
 
-.modal-content span{
+.modal-content span {
     margin-left: auto;
     margin-top: 3px;
     margin-bottom: 5px;
@@ -275,11 +271,11 @@ nav {
     cursor: pointer;
 }
 
-.modal-content span:hover{
+.modal-content span:hover {
     background: rgb(121, 121, 121);
 }
 
-.show{
+.show {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
@@ -287,11 +283,15 @@ nav {
 
 /*INÍCIO*/
 
-#inicio{
+#inicio {
     position: relative;
-    padding: 100px;background: #360033;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 100px;
+    background: #360033;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0b8793, #360033);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0b8793, #360033);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -299,7 +299,7 @@ nav {
     padding-bottom: 140px;
 }
 
-#inicio .tituloInicio{
+#inicio .tituloInicio {
     font-family: "Colonna MT", sans-serif;
     color: white;
     margin: 15px 0 40px 0;
@@ -309,7 +309,7 @@ nav {
     padding-bottom: 10px;
 }
 
-#inicio .tituloInicio::after{
+#inicio .tituloInicio::after {
     content: '';
     width: 120px;
     height: 3px;
@@ -319,24 +319,24 @@ nav {
     display: block;
 }
 
-.inicioPersonalizado{
+.inicioPersonalizado {
     border-style: double;
     border-color: white;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.textoInicio{
+.textoInicio {
     color: white;
 }
 
-.textoColor{
+.textoColor {
     color: white;
 }
 
 /*SWIPER*/
 
-.slider{
+.slider {
     position: relative;
     padding: 100px;
     background-color: rgb(197, 196, 196);
@@ -347,7 +347,7 @@ nav {
     padding-bottom: 140px;
 }
 
-.swiperTexto{
+.swiperTexto {
     text-align: center;
 }
 
@@ -364,7 +364,7 @@ nav {
     font-weight: bold;
 }
 
-.box{
+.box {
     width: 250px;
     height: 450px;
     background-color: #1e1e26;
@@ -380,57 +380,63 @@ nav {
     margin: 20px 10px;
 }
 
-.box:hover{
-    background: #dd4040;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #dd1818, #333333); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.box:hover {
+    background: #dd4040;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #dd1818, #333333);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #dd1818, #333333);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.model{
+.model {
     height: 250px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 300px;
 }
 
-.details p{
-    font-family:  Calibri, 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+.details p {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: #6a6a74;
     text-align: center;
     margin-top: 20px;
 }
 
-.marvel{
+.marvel {
     color: #32323e;
     font-weight: bold;
     letter-spacing: 2px;
-    font-family: Calibri, 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     font-size: 25px;
 }
 
 /* EVENTOS */
 
-#eventos{
+#eventos {
     position: relative;
     padding-top: 64px;
-    background: #009FFF;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #c5c4c4, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #c5c4c4, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #009FFF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #c5c4c4, #009FFF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #c5c4c4, #009FFF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#eventos h2{
+#eventos h2 {
     background: none;
 }
 
-.title-evento{
-    font-family: "Colonna MT",sans-serif;
+.title-evento {
+    font-family: "Colonna MT", sans-serif;
     text-align: center;
     margin-left: 50px;
     margin-right: 50px;
@@ -438,52 +444,52 @@ nav {
     color: rgb(255, 255, 255);
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.container.eventos{
+.container.eventos {
     padding: 10px 0;
     border-radius: 4px;
     background: black;
 }
 
-figure{
+figure {
     max-width: 800px;
     margin: 0 auto 20px;
     border: 2px solid white;
 }
 
 @media (max-width: 991px) {
-    figure{
+    figure {
         max-width: 600px;
     }
 }
 
-@media (max-width: 762px){
-    figure{
+@media (max-width: 762px) {
+    figure {
         max-width: 400px;
     }
 }
 
-figure img{
+figure img {
     display: block;
     max-width: 100%;
     min-width: 100%;
 }
 
-.thumb_img_list{
+.thumb_img_list {
     text-align: center;
     margin-bottom: 0;
 }
 
-.thumb_img_list ul{
+.thumb_img_list ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.thumb_img_list ul li{
+.thumb_img_list ul li {
     display: inline-block;
     border: 1px solid white;
     width: 100px;
@@ -491,19 +497,19 @@ figure img{
     cursor: pointer;
 }
 
-.thumb_img_list ul li:hover{
+.thumb_img_list ul li:hover {
     z-index: 2;
     transform: scale(1.25);
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.425);
 }
 
-.thumb_img_list ul li.active{
+.thumb_img_list ul li.active {
     z-index: 2;
     transform: scale(1.25);
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.425);
 }
 
-.thumb_img_list ul li img{
+.thumb_img_list ul li img {
     display: block;
 }
 
@@ -512,13 +518,13 @@ figure img{
 /* OBS: Alguns componentes abaixo foram 
 usados no Swiper também.*/
 
-#about-area{
+#about-area {
     position: relative;
     padding: 100px;
     background: #c5c4c4;
 }
 
-.main-title{
+.main-title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     margin: 15px 0 40px 0;
@@ -539,26 +545,26 @@ usados no Swiper também.*/
     display: block;
 }
 
-.style-color{
+.style-color {
     color: black;
 }
 
-.container h2{
+.container h2 {
     border-radius: 4px;
     background-color: black;
 }
 
-#about-list{
+#about-list {
     list-style: none;
     padding-left: 0;
 }
 
-#about-list i{
+#about-list i {
     font-size: 30px;
     color: #189657;
 }
 
-.cardModelo{
+.cardModelo {
     width: auto;
     height: 250px;
     padding: 10px 10px 20px 10px;
@@ -571,14 +577,16 @@ usados no Swiper também.*/
 .rotate_left {
     float: left;
     padding-left: 19%;
-    -ms-transform: rotate(-11deg); /* IE 9 */
-    -webkit-transform: rotate(-11deg); /* Safari */
+    -ms-transform: rotate(-11deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-11deg);
+    /* Safari */
     transform: rotate(-11deg);
 }
 
 /* NOSSA EQUIPE */
 
-.title-fun{
+.title-fun {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
     margin: 1px 0 40px 0;
@@ -598,11 +606,11 @@ usados no Swiper também.*/
     display: block;
 }
 
-.container .title-fun{
+.container .title-fun {
     background: none;
 }
 
-.container.equipe{
+.container.equipe {
     position: relative;
     border: double;
     color: white;
@@ -614,7 +622,7 @@ usados no Swiper também.*/
     background: #131111;
 }
 
-.container .boxs{
+.container .boxs {
     position: relative;
     margin: auto;
     width: 275px;
@@ -625,49 +633,49 @@ usados no Swiper também.*/
     transition: 0.5s;
 }
 
-.container .boxs:hover{
+.container .boxs:hover {
     z-index: 2;
     transform: scale(1.25);
     box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
     border-radius: 0%;
 }
 
-.container .boxs .imgBx{
+.container .boxs .imgBx {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.container .boxs .imgBx::before{
+.container .boxs .imgBx::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: linear-gradient(180deg,rgba(0, 225, 255, 0.788),black);
+    background: linear-gradient(180deg, rgba(0, 225, 255, 0.788), black);
     mix-blend-mode: multiply;
     opacity: 0;
     transition: 0.5s;
 }
 
-.container .boxs:hover .imgBx{
+.container .boxs:hover .imgBx {
     border: double;
     color: white;
     opacity: 1;
 }
 
-.container .boxs:hover .imgBx::before{
+.container .boxs:hover .imgBx::before {
     opacity: 1;
 }
 
-.container .boxs .imgBx img{
+.container .boxs .imgBx img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.container .boxs .content{
+.container .boxs .content {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -677,36 +685,36 @@ usados no Swiper também.*/
     align-items: flex-end;
 }
 
-.container .boxs .content h3{
+.container .boxs .content h3 {
     color: white;
     transition: 0.5s;
     text-transform: uppercase;
     margin-bottom: 5px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     transform: translateY(200px);
 }
 
-.container .boxs:hover .content h3{
+.container .boxs:hover .content h3 {
     transform: translateY(0);
     transition-delay: 0.4s;
 }
 
-.container .boxs .content p{
+.container .boxs .content p {
     color: white;
     transform: translateY(200px);
     transition: 0.5s;
     font-size: 14px;
 }
 
-.container .boxs:hover .content p{
+.container .boxs:hover .content p {
     transform: translateY(0);
     transition-delay: 0.5s;
 }
 
 /* MODAL */
 
-.modalSC{
+.modalSC {
     position: fixed;
     padding: 0;
     left: 0;
@@ -720,13 +728,13 @@ usados no Swiper também.*/
     transform: scale(1.1);
     opacity: 0;
     visibility: hidden;
-    transition: visibility 0.25s ease-in-out, 
-    transform 0.25s ease-in-out,
-    opacity 0.25s ease-in-out;
+    transition: visibility 0.25s ease-in-out,
+        transform 0.25s ease-in-out,
+        opacity 0.25s ease-in-out;
     z-index: 9;
 }
 
-.modal-content.contSup{
+.modal-content.contSup {
     background: white;
     width: 400px;
     height: auto;
@@ -734,30 +742,30 @@ usados no Swiper também.*/
     box-shadow: 30px 50px 10px rgba(255, 255, 255, 0.089);
 }
 
-.modal-content.contSup div{
+.modal-content.contSup div {
     padding-top: 13px;
     padding-left: 10px;
-    
+
     background: #2b0505;
     color: white;
 }
 
-.modal-content.contSup div .span{
+.modal-content.contSup div .span {
     margin-bottom: 10px;
 }
 
-.modal-content.contSup ul{
+.modal-content.contSup ul {
     margin-top: 15px;
 }
 
 @media (max-width: 599px) {
-    .modal-content.contSup{
+    .modal-content.contSup {
         margin-left: 2%;
         margin-right: 2%;
     }
 }
 
-.span{
+.span {
     float: right;
     width: 33px;
     height: 32px;
@@ -766,17 +774,17 @@ usados no Swiper também.*/
     cursor: pointer;
 }
 
-.span:hover{
+.span:hover {
     width: 33px;
     height: 32px;
     background: rgb(121, 121, 121);
 }
 
-.modal-content.contSup li{
+.modal-content.contSup li {
     list-style: none;
 }
 
-.show-modal{
+.show-modal {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
@@ -784,46 +792,46 @@ usados no Swiper também.*/
 
 /* FOOTER */
 
-footer{
+footer {
     width: 100%;
     min-height: 250px;
     background: rgb(27, 27, 27);
     display: flex;
 }
 
-footer .boxs{
+footer .boxs {
     width: 320px;
     min-height: 150px;
     padding: 20px;
 }
 
-footer .boxs li a:hover{
+footer .boxs li a:hover {
     color: cyan;
     border-bottom: 2px solid cyan;
     opacity: 0.7;
 }
 
-footer .boxs:nth-child(4){
+footer .boxs:nth-child(4) {
     width: 400px;
 }
 
-.boxs h2{
+.boxs h2 {
     text-align: center;
     color: white;
 }
 
-.boxs li{
+.boxs li {
     text-align: center;
     margin: 10px 0px;
     list-style: none;
 }
 
-.icons{
+.icons {
     text-align: center;
     font-size: 40px;
 }
 
-.footer{
+.footer {
     width: 100%;
     height: 70px;
     display: flex;
@@ -833,31 +841,31 @@ footer .boxs:nth-child(4){
     padding: 0px 20px;
 }
 
-footer .boxs button{
+footer .boxs button {
     background: transparent;
     border: none;
 }
 
 /* MODO TELA MINI */
 
-@media(max-width: 950px){
-    footer{
+@media(max-width: 950px) {
+    footer {
         flex-direction: column;
     }
 
-    footer .boxs{
+    footer .boxs {
         width: 100%;
         text-align: center;
     }
 
-    footer .boxs:nth-child(4){
+    footer .boxs:nth-child(4) {
         width: 100%;
     }
 }
 
 /* BOTÃO FEEDBACK */
 
-.feedback{
+.feedback {
     float: left;
     position: fixed;
     width: 50px;
@@ -870,31 +878,31 @@ footer .boxs button{
     z-index: 8;
 }
 
-.feedback h5{
+.feedback h5 {
     color: white;
     margin-top: 70px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     transform: rotate(270deg);
 }
 
-.feedback:hover{
+.feedback:hover {
     background: black;
 }
 
-.feedback:hover h5{
-    color:white;
+.feedback:hover h5 {
+    color: white;
 }
 
-@media (max-width:355px){
-    .feedback{
+@media (max-width:355px) {
+    .feedback {
         bottom: 40%;
     }
 }
 
 /* BOTÃO FLUTUANTE WHATSAPP */
 
-.whatsapp{
+.whatsapp {
     position: fixed;
     bottom: 70px;
     right: 25px;
@@ -908,12 +916,12 @@ footer .boxs button{
 }
 
 @keyframes whatsapp {
-    0%{
+    0% {
         transform: rotate(0) scale(1.2);
     }
 }
 
-.whats-icon{
+.whats-icon {
     font-size: 30px;
     padding: 5px 13px;
 }
